@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;700&display=swap');
+
+.body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, #508ae1, #4579ec, #4f65f1, #6849f0, #870be7);
+}
+
+.decorative-circle{
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to left, #508ae1, #4579ec, #4f65f1, #6849f0, #870be7);
+    border-radius: 50%;
+}
+
+.decorative-circle-alt{
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to right, #508ae1, #4579ec, #4f65f1, #6849f0, #870be7);
+    border-radius: 50%;
+}
+
+.users-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    background-color: #FFFFFF;
+    width: 35vmax;
+    max-height: 65vh;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.users-header-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    width: 100%;
+    max-height: 10%;
+}
+
+.users-header-container h1{
+    font-family: 'Baloo Thambi 2', cursive;
+    color: #404040;
+}
+
+.users-body-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    overflow: scroll;
+    padding-top: 15px;
+}
+
+.user-child{
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 3px solid #508ae1;
+    width: 80%;
+    height: 25%;
+    margin-block: 10px;
+    padding-inline: 15px;
+    border-radius: 10px;
+}
+
+.user-child-top{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-child-top h4{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.avatar-img{
+    width: 10%;
+    height: undefined;
+    aspect-ratio: 1;
+}
+
+.user-child-bottom{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-width: 100%;
+    justify-content: flex-end;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: #508ae1;
+}
+
+.user-child-bottom p {
+    cursor: pointer;
+    background: 
+    linear-gradient(to right, rgba(80, 138, 225, 0), rgba(80, 138, 225, 0)),
+    linear-gradient(to right, rgba(80, 138, 225, 1), rgba(80, 138, 225, 1), rgba(80, 138, 225, 1));
+    background-size: 100% 0.05em, 0 0.05em;
+    background-position: 100% 100%, 0% 90%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.user-child-bottom p:hover,
+.user-child-bottom p:focus {
+  background-size: 0 0.05em, 100% 0.05em;
+}
